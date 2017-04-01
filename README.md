@@ -5,7 +5,7 @@ Este projeto implementa em C++ o método de Cholesky para a resolução de siste
 
 O projeto pode ser executaado a partir do arquivo executável (exe). 
 
-## Cdigo
+## Código
 
 O código do programa encontra-se na pasta (codigo), junto do seu arquivo makefile.
 
