@@ -1,44 +1,49 @@
-
 /*
    ==================================================================================
-
-   Arquivo: GaussSeidel.h
-   Comentarios: Declaração da classe responsável pelo método de GaussSeidel
-
+   Arquivo: FatLuParcial.h
+   Comentarios: Declaração da classe responsável pela fatoração de Cholesky.
    ==================================================================================
-
    Autor..............: Hiago Mayk Gomes de Araujo Rocha
                         Vitor de Godeiro Marques
                         Instito Metropole Digital
                         Universidade Federal do Rio Grande do Norte
                         Natal, Rio Grande do Norte, Brasil
    Data Criação.......: 28/02/2015
-   Ultima Modificação.: 28/02/2015
-
+   Ultima Modificação.: 01/04/2017
   ==================================================================================
 */
 
-#ifndef GAUSSSEIDEL_H
-#define GAUSSSEIDEL_H
+#ifndef FATCHOLESKY_H
+#define FATCHOLESKY_H
 
-class GaussSeidel
+class FatCholesky
 {
     public:
 
-        GaussSeidel();
+        /**
+        *   Construtor
+        *   @param void
+        *   @return void
+        */
+        FatCholesky();
 
-        virtual ~GaussSeidel();
+        /**
+        *   Destrutor
+        *   @param void
+        *   @return void
+        */
+        virtual ~FatCholesky();
 
         /**
         *   Método responsavel por chamar as demais funcoes e
-        *   executar o método de GaussSeidel
+        *   executar a fatoracao LU com pivotamento parcial
         *   @param void
         *   @return void
         **/
-        void executarGaussSeidel();
-  
+        void FatExecutar();
+    
     private:
-        //Funcoes
+         //Funcoes
 
         /**
         *   Funcao responsavel por imprimir o cabecalho do menu
@@ -68,27 +73,23 @@ class GaussSeidel
         */
         void visualizaSistema();
 
-        bool verificaMax(float xProx[], float xAnt[]);
-
         /**
-        *   Funcao responsavel por fazer as operações do método de Jacobi,
-        *   gerando a solucao.
+        *   Funcao responsavel por fazer a operação de Deconposição de Cholesky
         *   @param void
         *   @return void
         */
-        void aplicaGaussSeidel();
+        void fatoraSistema();
 
         /**
-        *   Metodo responsavel por imprimir a solucao.
+        *   Metodo responsavel por imprimir a solucao do sistema(X1,X2,...,Xn)
         *   @param void
         *   @return void
         */
-        void solucao(float xProx[]);
+        void solucao();
 
         //Variaveis
         int ordem;
-        float **matriz;
-        float erro;
+        double **matriz;
 };
 
-#endif // GAUSSSEIDEL_H
+#endif // FATCHOLESKY_H
