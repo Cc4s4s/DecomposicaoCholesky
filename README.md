@@ -15,5 +15,5 @@ O código do programa encontra-se na pasta (codigo), junto do seu arquivo makefi
 
 ## Licença
 
-Este projeto é licenciado sob a licença MIT - consulte o arquivo [LICENSE.md](LICENSE.md) para obter detalhes.
+Este projeto é licenciado sob a licença MIT - consulte o arquivo [LICENSE.md](LICENSE) para obter detalhes.
 
