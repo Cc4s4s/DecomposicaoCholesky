@@ -12,6 +12,7 @@ O código do programa encontra-se na pasta (codigo), junto do seu arquivo makefi
 ## Autor
 
 * **Vítor Godeiro** - *GitHub* - [VitorGodeiro](https://github.com/vitorgodeiro)
+* **Hiago Mayk**
 
 ## Licença
 
